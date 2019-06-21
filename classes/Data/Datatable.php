@@ -24,6 +24,7 @@ class Datatable
             post_title varchar(255),
             post_desc varchar(255) default NULL,
             user_id bigint(20),
+            status_id varchar(255),
             PRIMARY KEY  (`ID`)
         );";
         dbDelta( $sql );

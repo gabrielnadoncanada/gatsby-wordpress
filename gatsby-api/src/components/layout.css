@@ -623,7 +623,7 @@ html {
   
 
 
-  label,input[type=text], textarea {
+  label,input[type=text], textarea, select {
     display: block;
     margin-bottom: 0.5rem;
   }

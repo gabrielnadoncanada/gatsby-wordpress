@@ -90,12 +90,15 @@ class TaskRoutes
         global $wpdb;
         $table_name = $wpdb->prefix . 'taskmanager';
 
+
+      
         $resultat = $wpdb->insert( 
             $table_name, 
             array( 
                 'post_title' => $request['post_title'],
                 'post_desc' => $request['post_desc'],
-                'user_id' => $request['user_id']
+                'user_id' => $request['user_id'],
+                'status_id' => $request['status_id']
             ) 
         );
 
@@ -115,11 +118,14 @@ class TaskRoutes
             array( 
                 'post_title' => $request['post_title'],
                 'post_desc' => $request['post_desc'],
-                'user_id' => $request['user_id']
+                'user_id' => $request['user_id'],
+                'status_id' => $request['status_id']
             ),
             array('ID' => $request['id'])
         );
         return $resultat;
     }
     
+
+
 }
