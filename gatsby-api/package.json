@@ -9,6 +9,7 @@
     "axios": "^0.19.0",
     "docz": "^1.2.0",
     "docz-theme-default": "^1.2.0",
+    "emailjs-com": "^2.3.2",
     "gatsby": "^2.9.4",
     "gatsby-image": "^2.1.4",
     "gatsby-plugin-manifest": "^2.1.1",
@@ -23,6 +24,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-router": "^3.2.1",
     "sweetalert2": "^8.12.2"
   },
   "devDependencies": {

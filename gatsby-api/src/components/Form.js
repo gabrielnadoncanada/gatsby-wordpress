@@ -59,12 +59,19 @@ export default class Form extends Component {
         return (
             <section id="table">
                 <form onSubmit={this.handleSubmit}>
-                    <label for="post_title">Title</label>
-                    <input name="post_title" type="text" value={this.state.post_title} onChange={this.handleChangeTitle} />
-                    <label for="post_dec">Description</label>
-                    <input name="post_desc" type="text" value={this.state.post_desc} onChange={this.handleChangeDesc} />
-                    <label for="user_id">User</label>
-                    <input name="user_id" type="text" value={this.state.user_id} onChange={this.handleChangeId} />
+                    <div className="form-group">
+                        <label for="post_title">Title</label>
+                        <input name="post_title" type="text" value={this.state.post_title} onChange={this.handleChangeTitle} />
+                    </div>
+                    <div className="form-group">
+                        <label for="post_dec">Description</label>
+                        <input name="post_desc" type="text" value={this.state.post_desc} onChange={this.handleChangeDesc} />
+                    </div>
+                    <div className="form-group">
+                        <label for="user_id">User</label>
+                        <input name="user_id" type="text" value={this.state.user_id} onChange={this.handleChangeId} />
+                    </div>
+
                     <input type="submit" value="Sumbit" />
                 </form>
             </section>

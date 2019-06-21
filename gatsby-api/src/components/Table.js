@@ -40,13 +40,13 @@ export default class Table extends Component {
         event.preventDefault()
         
         let args = {
-            title: 'Are you sure?',
-            text: "You won't be able to revert this!",
+            title: 'Êtes-vous sûr?',
+            text: "Vous ne pourrez pas revenir en arrière!",
             type: 'warning',
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!',
+            confirmButtonText: 'Oui, supprimez!',
             boutonid : event.target.id
         }
         
@@ -59,8 +59,8 @@ export default class Table extends Component {
                         user_id: this.state.user_id
                     })
                     Swal.fire(
-                        'Deleted!',
-                        'Your file has been deleted.',
+                        'Supprimé!',
+                        'Votre fichier a été supprimé.',
                         'success'
                     )
                 }
@@ -69,7 +69,6 @@ export default class Table extends Component {
 
     handleUpdate(event) {
         event.preventDefault()
-       
         let args = {
             post_title: this.state.post_title,
             post_desc: this.state.post_desc,
@@ -82,19 +81,13 @@ export default class Table extends Component {
             }, (error) => {
                 this.setState({ error })
             })
-
     }
-
-   
     componentDidUpdate(prevStates) {
-       
         if (this.state.items !== prevStates.items) {
             fetch('http://localhost/wordpress/wp-json/taskmanager/v0/tasks')
             .then(res => res.json())
             .then((result) => {
-
                 this.setState({ items: result })
-
             }, (error) => {
                 this.setState({ error })
             })
@@ -104,9 +97,7 @@ export default class Table extends Component {
         fetch('http://localhost/wordpress/wp-json/taskmanager/v0/tasks')
             .then(res => res.json())
             .then((result) => {
-
                 this.setState({ items: result })
-
             }, (error) => {
                 this.setState({ error })
             })

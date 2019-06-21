@@ -651,3 +651,17 @@ html {
     width: 60%;
 
  }
+
+ header {
+   text-align: left;
+ }
+
+ .form-group {
+   display: inline-block;
+   margin-right: 2rem;
+ }
+
+
+
+
+
