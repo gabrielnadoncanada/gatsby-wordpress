@@ -13,6 +13,9 @@ export default () => (
                 <li>
                     Gabriel Nadon
                 </li>
+                <li>
+                    Emiliana Braga
+                </li>
             </ul>
             <p>Such wow a big team.</p>
         </div>
